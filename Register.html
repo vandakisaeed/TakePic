@@ -4,102 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="TakePicstyle.css">
+    <link rel="stylesheet" href="Register.css">
 </head>
+
+<header>
+  <h1>Take Pic</h1>
+  <h2>Find the best place to take a Pic</h2>
+
+<div class="header-content">
+  <nav class="navbar">
+    <ul>
+      <li><a href="./TakePic.html">Home</a></li>
+
+      <li class="dropdown">
+        <input type="checkbox" id="toggle-dropdown" hidden>
+        <label for="toggle-dropdown" class="dropdown-toggle">Destination by Topic ▾</label>
+
+        <div class="dropdown-menu">
+          <a href="./Nature.html">Nature</a>
+          <a href="./Landescape.html">Landscape</a>
+          <a href="./Sunset.html">Sunset</a>
+          <a href="./Beach.html">Beach</a>
+          <a href="./Forest.html">Forest</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <input type="checkbox" id="togglecountry-dropdown" hidden>
+        <label for="togglecountry-dropdown" class="dropdown-toggle">Destination by Country ▾</label>
+
+        <div class="dropdown-menu">
+          <a href="./Germany.html">Germany</a>
+          <a href="./Italy.html">Italy</a>
+          <a href="./Portugal.html">Portugal</a>
+          <a href="./Japan.html">Japan</a>
+          <a href="./Bolivia.html">Mexico</a>
+        </div>
+      </li>
+      <li><a href="./Contact.html">Contact</a></li>
+      <li><a href="./Register.html">Register</a></li>
+      <li><a href="./About.html">About</a></li>
+
+    </ul>
+  </nav>
+  <img
+    width="200" 
+    src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+</div>
+</header>
 <body>
-        <header>
-        <h1>Take Pic</h1>
-    <h2>Find the best place to take a Pic</h2>
-
-<nav class="navbar">
-  <ul>
-    <li><a href="./TakePic.html">Home</a></li>
-
-    <li class="dropdown">
-      <input type="checkbox" id="toggle-dropdown" hidden>
-      <label for="toggle-dropdown" class="dropdown-toggle">Destination by Topic ▾</label>
-
-      <div class="dropdown-menu">
-        <a href="./Nature.html">Nature</a>
-        <a href="./Landescape.html">Landscape</a>
-        <a href="./Sunset.html">Sunset</a>
-        <a href="./Beach.html">Beach</a>
-        <a href="./Forest.html">Forest</a>
-      </div>
-    </li>
-     <li class="dropdown">
-      <input type="checkbox" id="togglecountry-dropdown" hidden>
-      <label for="togglecountry-dropdown" class="dropdown-toggle">Destination by Country ▾</label>
-
-      <div class="dropdown-menu">
-        <a href="./Germany.html">Germany</a>
-        <a href="./Italy.html">Italy</a>
-        <a href="./Portugal.html">Portugal</a>
-        <a href="./Japan.html">Japan</a>
-        <a href="./Bolivia.html">Bolivia</a>
-      </div>
-    </li>
-
-
-    <li><a href="./Contact.html">Contact</a></li>
-    <li><a href="./Register.html">Register</a></li>
-    <li><a href="./About.html">About</a></li>
-
-  </ul>
-</nav>
-
-
-    <!-- <a href="http://google.com">GOOGLE</a> -->
-
-    <img
-        width="200" 
-        src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
-    
-    </header>
-   <H2> Register</H2>
+   <h3> Register</h3>
   <form action="danke.html" method="get">
     <fieldset>
-      <legend>Personal Info</legend>
+      <legend>Join Now and discover your potential</legend>
 
-      <label for="vorname">First Name:</label><br>
+      <label for="vorname">profile name:</label><br>
       <input type="text" id="vorname" name="vorname" required><br><br>
 
-      <label for="nachname">Last Name:</label><br>
+      <label for="nachname">your name:</label><br>
       <input type="text" id="nachname" name="nachname" required><br><br>
 
-      <label for="email">E-Mail:</label><br>
+      <label for="email">e-mail:</label><br>
       <input type="email" id="email" name="email" required><br><br>
 
-      <label for="telefon">Telephone Number:</label><br>
+      <label for="telefon">phone number:</label><br>
       <input type="tel" id="telefon" name="telefon"><br><br>
     </fieldset>
 
     <fieldset>
-      <legend>membership</legend>
+      <legend>Register</legend>
 
-      <label for="plan">Chosse the Plan:</label><br>
+      <label for="plan">Choose your plan:</label><br>
       <select name="plan" id="plan" required>
-        <option value="">-- Make a choice --</option>
-        <option value="basic">Basic – 29€/Monat</option>
-        <option value="premium">Premium – 49€/Monat</option>
-        <option value="student">Student – 19€/Monat</option>
+        <option value="">-- click here --</option>
+        <option value="basic">Basic – free</option>
+        <option value="premium">Prime – 19€/month</option>
+        <option value="student">Professional – 39€/month</option>
       </select><br><br>
-
-      </fieldset>
-
-    <fieldset>
-      <legend>Access Info</legend>
-
-      <label for="username">User Name:</label><br>
-      <input type="text" id="username" name="username" required><br><br>
-
-      <label for="passwort">Password:</label><br>
-      <input type="password" id="passwort" name="passwort" required><br><br>
+      <label>personalize your feed:</label><br>
+      <input type="checkbox" name="zeit" value="morgens"> architecture<br>
+      <input type="checkbox" name="zeit" value="mittags"> tropical vibes<br>
+      <input type="checkbox" name="zeit" value="abends"> travel destinations<br><br>
+      <input type="submit" value="register now"> 
     </fieldset>
 
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
+    <H2> Log In</H2>
+    <fieldset>
+      <legend>Already part of the family?</legend>
+
+      <label for="username">profilename or e-mail:</label><br>
+      <input type="text" id="username" name="username" required><br><br>
+      <label for="passwort">password:</label><br>
+      <input type="password" id="passwort" name="passwort" required><br><br>
+      <input type="reset" value="enter">
+      <a href=""style="color: inherit; font-size: smaller; text-decoration: none;">forgot your password?</a>
+    </fieldset>
+
+    
   </form>
+  <footer>
+    @all rights reserved
+  </footer>
 
 </body>
 </html>
